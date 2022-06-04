@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', UI.displayBooks)
 // Event: add a book
 
 document.querySelector('#book-form').addEventListener('submit', (e) => {
+    e.preventDefault()
     // get form values
     const title = document.querySelector('#title').value
     const author = document.querySelector('#author').value
